@@ -3,13 +3,11 @@
 int main(){
     int idade = 10;
     int dinheiro = 20;
-    char nome[30] = "italo";
-    char letra = 'A'
-    printf(idade);
+    char letra = 'A';
+    char nome[20] = "italo";
     //para se usar o char é nescessario criar um vetor,mas em caso de apenas 1 letra se pode usar sem o vetor
 
-
-    return 0
+    return 0;
 }
 
    /*declaração só poder usar o _ ou uma letra,não se poder usar numeros 
