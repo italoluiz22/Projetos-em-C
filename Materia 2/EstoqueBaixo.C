@@ -2,12 +2,16 @@
 
 
 int main(){
-  int estoque = 4;
+  int estoque = 6;
 
-  if (estoque < 5)
+  if (estoque > 5)
   {
-    printf("Estoque Baixo");
+    printf("Estoque Alto");
+  }else
+  {
+   printf("Estoque Baixo");
   }
+  
   
 return 0; 
 

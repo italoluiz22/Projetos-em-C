@@ -8,7 +8,11 @@ int main(){
     if (idade01 > idade02)
     {
         printf("idade 01 é maior ");
+    }else
+    {
+      printf("Idade 02 é maior");
     }
+    
     
    return 0; 
 }

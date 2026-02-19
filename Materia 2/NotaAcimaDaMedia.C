@@ -2,12 +2,16 @@
 
 int main(){
 
-    int nota = 80;
+    int nota = 50;
 
     if (nota >= 60)
     {
         printf("Passou");
+    }else
+    {
+      printf("Poxa infelizmente,voce não passou");
     }
+    
 
     return 0;
     

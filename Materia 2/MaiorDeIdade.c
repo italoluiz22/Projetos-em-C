@@ -3,16 +3,18 @@
 
 int main(){
 
-int idade = 20;
+int idade = 15;
 
-if (idade>= 18);
+if (idade>= 18)
 {
     printf("vocÊ é maior de idade\n");
-    printf("dentro\n");
+    
+}else
+{
+printf("Voce é menor de idade");
 }
-    printf("fora");
 
-    return 0;
+return 0;
 
 
 }

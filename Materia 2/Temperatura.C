@@ -1,14 +1,17 @@
-#include <stdio.h> 
-
+#include <stdio.h>
 
 int main(){
-  float temperatura = 32.0;
+  float temperatura = 20.0;
 
-  if (temperatura > 30.0);
+  if (temperatura > 30.0)
   {
     printf("está calor\n");
   }
-  
-  return 0;
+  else
+  {
+    printf("não está calor\n");
+  }
 
+  return 0;
 }
+
