@@ -2,9 +2,9 @@
 #include <string.h>
 
 int main (){
-  char estado1, estado2;
+  char estado1[10], estado2[10];
   char codigo1[10], codigo2[10];
-  char cidade1[20], cidade2[20];
+  char cidade1[50], cidade2[50];
   unsigned long populacao1, populacao2;
   float area1, area2;
   float PIB1, PIB2;
@@ -12,7 +12,7 @@ int main (){
   float percapita1, percapita2, densidade1, densidade2;
 
  printf("Digite os dados da primeira carta:\n");
- scanf(" %c",&estado1);
+ scanf(" %s",estado1);
  scanf("%s",codigo1);
  getchar();
  fgets(cidade1,sizeof(cidade1),stdin);
@@ -27,7 +27,7 @@ int main (){
  percapita1 = PIB1 / populacao1;
 
  printf("\nDigite os dados da segunda carta:\n");
- scanf(" %c",&estado2);
+ scanf(" %s",estado2);
  scanf("%s",codigo2);
  getchar();
  fgets(cidade2,sizeof(cidade2),stdin);
@@ -52,6 +52,19 @@ int main (){
  printf("Densidade: Carta 2 venceu (%d)\n", densidade1 < densidade2);
  printf("PIB per capita: Carta 1 venceu (%d)\n", percapita1 > percapita2);
  printf("Super Poder: Carta 1 venceu (%d)\n", SuperPoder1 > SuperPoder2);
+
+printf("\n");
+
+ printf("Comparação de cartas (Atributo: Poder):\n");
+ printf("Carta 1 - %s:%.2f\n",estado1,SuperPoder1);
+ printf("Carta 2 - %s:%.2f\n",estado2,SuperPoder2);
+ if (SuperPoder1 > SuperPoder2){
+   printf("Resultado: Carta 1 (%s) Venceu!\n",cidade1);
+ }else
+ {
+  printf("Resultado: Carta 2 (%s) Venceu!",cidade2);
+ }
+ 
 
  return 0;
 }
